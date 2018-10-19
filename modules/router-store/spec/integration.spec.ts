@@ -494,7 +494,7 @@ describe('integration spec', () => {
       });
   });
 
-  xit('should support cancellation of initial navigation using canLoad guard', (done: any) => {
+  it('should support cancellation of initial navigation using canLoad guard', (done: any) => {
     const reducer = (state: any, action: RouterAction<any>) => {
       const r = routerReducer(state, action);
       return r && r.state
